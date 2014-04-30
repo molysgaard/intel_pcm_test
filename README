@@ -1,0 +1,13 @@
+This is a test of the Intel PCM measurement.
+
+You can list your events in the custom_events array.
+The code will run the same kernel several with different PCM events. This way we can measure the more than 3 events in one binary. I am not sure if this will work for superpixels though.
+
+If the PCM doesn't register try doing what the script tells you to fix the problems.
+If that doesn't help try running it as sudo. If that fails try to run it with reset:
+
+$ sudo ./test reset
+
+and then run it as sudo again
+
+$ sudo ./test
