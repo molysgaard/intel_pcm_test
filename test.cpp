@@ -80,28 +80,28 @@ int main(int argc,char *argv[]){
   // The custom_events array contains num_events PCM::CustomCoreEventDescriptions.
   // The first elem in the struct is the Event Num and second is the second the Umask Value.
   custom_events[0] = {0x0e,0x01};
-  event_names.push_back("uops");
+  event_names.push_back("UOPS_ISSUED.ANY");
 
   custom_events[1] = {0x0e,0x10};
-  event_names.push_back("jazz");
+  event_names.push_back("UOPS_ISSUED.FLAGS_MERGE");
 
   custom_events[2] = {0x0e,0x20};
-  event_names.push_back("eple");
+  event_names.push_back("UOPS_ISSUED.SLOW_LEA");
 
   custom_events[3] = {0x0e,0x40};
-  event_names.push_back("nisse");
+  event_names.push_back("UOPS_ISSUED.SiNGLE_MUL");
 
   custom_events[4] = {0x0e,0x01};
-  event_names.push_back("uops");
+  event_names.push_back("UOPS_ISSUED.ANY");
 
   custom_events[5] = {0x0e,0x10};
-  event_names.push_back("jazz");
+  event_names.push_back("UOPS_ISSUED.FLAGS_MERGE");
 
   custom_events[6] = {0x0e,0x20};
-  event_names.push_back("eple");
+  event_names.push_back("UOPS_ISSUED.SLOW_LEA");
 
   custom_events[7] = {0x0e,0x40};
-  event_names.push_back("nisse");
+  event_names.push_back("UOPS_ISSUED.SiNGLE_MUL");
 
   uint64 counts[num_events];
 
